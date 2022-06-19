@@ -8,7 +8,7 @@ class BubbleSort{
         int a[] = new int[n];
         Random rd = new Random();
         for (int i = 0; i < n; i++) {
-            a[i] = rd.nextInt(5000);
+            a[i] = rd.nextInt(10000);
         }
         BubbleSort test = new BubbleSort();
         int count =test.bubbleSort(a);
@@ -18,9 +18,9 @@ class BubbleSort{
         int count = 0;//记录基本操作次数
         for (int i = 0; i < a.length; i++) {
             for (int j = 1; j < a.length - i; j++) {
+                count++;
                 if(a[j] < a[j-1]){
                     swap(a[j],a[j-1]);
-                    count ++;
                 }
             }
         }

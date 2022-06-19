@@ -8,7 +8,7 @@ class BubbleSort{
         int a[] = new int[n];
         Random rd = new Random();
         for (int i = 0; i < n; i++) {
-            a[i] = rd.nextInt(100);
+            a[i] = rd.nextInt(5000);
         }
         BubbleSort test = new BubbleSort();
         int count =test.bubbleSort(a);

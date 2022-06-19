@@ -15,11 +15,11 @@ public class MergeSort {
             a[i] = rd.nextInt(10000);
         }
         MergeSort test = new MergeSort();
-        int count =test.mergeSort(a);
+        test.mergeSort(a);
         System.out.println("基本操作次数：" + count);
         System.out.println("子问题规模：" + ziNum);
     }
-    int mergeSort(int[] original) {
+    void mergeSort(int[] original) {
         if (original == null) {
             throw new NullPointerException("The array can not be null !!!");
         }
@@ -34,7 +34,6 @@ public class MergeSort {
             mergeSort(partitionB);
             sort(partitionA, partitionB, original);
         }
-        return count;
     }
 
     private static void sort(int[] partitionA, int[] partitionB, int[] original) {

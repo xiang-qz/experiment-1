@@ -16,4 +16,5 @@ gitpod /workspace/experiment-1 (main) $ java BubbleSort
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
 请输入测试数据个数
 100
-基本操作次数：2209 *
+基本操作次数：2209 
+* 

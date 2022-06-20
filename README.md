@@ -1,4 +1,4 @@
-# experiment-1
+ # experiment-1
 实验一  分治算法
 ## 实验预期结果与实际结果
 ### 冒泡排序
@@ -87,7 +87,7 @@ Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
 100
 基本操作次数：532
 ````
-该算法以比较操作为基本操作，对于两组n个不同数据的输入虽然基本操作次数有一定差距，但都属于O(nlogn)，故两组输入数据的执行效率等价  
+该算法以比较操作为基本操作，对于两组n个不同数据的输入虽然基本操作次数不一样，但相差较小，都属于O(nlogn)，故两组输入数据的执行效率等价  
 
 * 使用随机数生成方法生成不同规模的测试数据（10、100、1000、2000、5000、10000）
 ````
@@ -139,4 +139,77 @@ Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
 10000
 基本操作次数：120611
 子问题规模：9999
+````
+### 快速排序
+* 两次生成100个随机数的测试数据
+````
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+100
+基本操作次数：961
+子问题规模：100
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+100
+基本操作次数：944
+子问题规模：100
+````
+该算法以比较操作为基本操作，对于两组n个不同数据的输入虽然基本操作次数不一样，但相差较小，都属于O(nlogn)，故两组输入数据的执行效率等价  
+
+* 使用随机数生成方法生成不同规模的测试数据（10、100、1000、2000、5000、10000）
+````
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+10
+基本操作次数：37
+子问题规模：10
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+100
+基本操作次数：946
+子问题规模：100
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+1000
+基本操作次数：16228
+子问题规模：1000
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+2000
+基本操作次数：34974
+子问题规模：2000
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+5000
+基本操作次数：105990
+子问题规模：5000
+gitpod /workspace/experiment-1 (main) $ javac QuickSort.java
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+gitpod /workspace/experiment-1 (main) $ java QuickSort
+Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
+请输入测试数据个数
+10000
+基本操作次数：225698
+子问题规模：10000
 ````
